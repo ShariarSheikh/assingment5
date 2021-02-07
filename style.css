@@ -1,0 +1,181 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+nav {
+  width: 85%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-logo {
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* .links-container{
+
+} */
+.page-link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* page css */
+.home-section {
+  width: 85%;
+  margin: auto;
+  height: auto;
+}
+.search-div {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30px;
+}
+#searchInput {
+  outline-color: white;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  padding-left: 8px;
+}
+#searchBtn {
+  outline-color: white;
+  height: 40px;
+  width: 20%;
+  border: none;
+  background-color: #e91e63;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0px #0000003d;
+  cursor: pointer;
+}
+
+#itemContainer {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.items-div {
+  width: 250px;
+  min-height: 220px;
+  border-radius: 8px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.item-pic {
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  max-height: 80%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.item-title {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* itemInfoContainer */
+#itemInfoContainer {
+  width: 50%;
+  margin: auto;
+}
+
+#itemImg {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  max-height: 300px;
+  object-fit: cover;
+}
+.info-title {
+  font-size: 2rem;
+}
+.info-ingredients {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+.ingredients-li {
+  margin-bottom: 1.1rem;
+  list-style: none;
+  font-size: 1.3rem;
+  color: darkgray;
+}
+.iconBg {
+  background-color: orange;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+.goHome {
+  border: none;
+  outline-color: white;
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 34px;
+  margin-top: 2rem;
+}
+@media (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 950px) {
+  nav {
+    width: 95%;
+  }
+  .home-section {
+    width: 95%;
+  }
+}
+@media (max-width: 870px) {
+  nav {
+    width: 95%;
+  }
+  .home-section {
+    width: 100%;
+  }
+  #itemContainer {
+    justify-content: center;
+  }
+}

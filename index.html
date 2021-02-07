@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Monster Meals</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <span class="page-logo">Monster Meals</span>
+        <ul class="links-container">
+          <li class="page-link">Home</li>
+          <li class="page-link">About</li>
+          <li class="page-link">Recipes</li>
+          <li class="page-link">Blog</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main container -->
+    <main>
+      <section class="home-section">
+        <!-- search box -->
+        <div class="search-div">
+          <input id="searchInput" type="text" placeholder="Search for Meal" />
+          <button id="searchBtn" onclick="searchBtn()">Search</button>
+        </div>
+        <!-- item container -->
+        <div id="allItem">
+          <div id="itemContainer"></div>
+        </div>
+
+        <div id="itemInfoContainer"></div>
+      </section>
+    </main>
+
+    <!-- script js -->
+    <script src="app.js"></script>
+  </body>
+</html>
